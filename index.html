@@ -57,7 +57,7 @@
           </div>
         </div>
         <div class="hero-image">
-          <img src="logo.png" alt="SnapGiv Logo" width="500" height="500">
+          <img src="/logo.png" alt="SnapGiv Logo" width="500" height="500">
         </div>
       </div>
     </div>
@@ -99,7 +99,7 @@
             </svg>
           </div>
           <h3>View Gallery</h3>
-          <p>Everyone can instantly view a shared gallery of images from the event.</p>
+          <p>Everyone can instantly view, share and download from a shared gallery of images from the event.</p>
         </div>
       </div>
     </div>
@@ -132,53 +132,48 @@
     </div>
   </section>
 
- <!-- Contact Section -->
- <section id="contact" class="contact">
-  <div class="container">
-    <h2>Get in Touch</h2>
-    <div class="contact-container">
-      <div class="contact-form-container">
-        <form id="contactForm" class="contact-form" onsubmit="return handleFormSubmit(event)">
-          <div class="form-group">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
-          </div>
-          <div class="form-group">
-            <label for="eventDate">Event Date</label>
-            <input type="date" id="eventDate" name="eventDate">
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-submit">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-send">
-              <line x1="22" y1="2" x2="11" y2="13"></line>
-              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
-            </svg>
-            Send Message
-          </button>
-        </form>
-        <div id="formSuccess" class="form-success">
-          <div class="success-icon">
-            <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
-              <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
-              <path class="checkmark-check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
-            </svg>
-          </div>
-          <h3>Thank You!</h3>
-          <p>Your message has been sent. We'll get back to you soon.</p>
-          <button id="sendAnother" class="btn-text">Send another message</button>
+   <!-- Contact Section -->
+   <section id="contact" class="contact">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <div class="contact-container">
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form" action="https://formsubmit.co/snapgiv@gmail.com" method="POST">
+            <!-- FormSubmit Configuration -->
+            <input type="hidden" name="_subject" value="New SnapGiv Inquiry">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://tal45.github.io/snapgiv-landing/thanks.html">
+            
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+              <label for="eventDate">Event Date</label>
+              <input type="date" id="eventDate" name="eventDate">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon-send">
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+              Send Message
+            </button>
+          </form>
         </div>
-      </div>
       <div class="contact-info">
         <h3>Contact Information</h3>
         <div class="info-item">
@@ -200,7 +195,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-logo">
-          <img src="logo.png" alt="SnapGiv Logo" width="40" height="40">
+          <img src="/logo.png" alt="SnapGiv Logo" width="40" height="40">
           <span>SnapGiv</span>
           <p>Capture and share your special moments instantly with SnapGiv.</p>
         </div>
